@@ -1,0 +1,11 @@
+farm_id,type_id,kpi,kpi_units,kpi_value
+farm_1,lfa_upland_suckler_wean,kpi1,kpi_unit,9.305736972015938
+farm_2,lfa_upland_suckler_wean,kpi1,kpi_unit,9.903056708113732
+farm_3,lfa_upland_suckler_wean,kpi1,kpi_unit,10.138135101414418
+farm_4,rear_finish,kpi1,kpi_unit,13.772111479962822
+farm_5,rear_finish,kpi1,kpi_unit,11.223323807139066
+farm_6,rear_finish,kpi1,kpi_unit,8.256065548023647
+farm_7,lfa_hill_ewe,kpi1,kpi_unit,11.833343671757275
+farm_8,lfa_hill_ewe,kpi1,kpi_unit,13.172985056477852
+farm_9,lfa_hill_ewe,kpi1,kpi_unit,8.156647072705308
+farm_10,lfa_hill_ewe,kpi1,kpi_unit,6.923993115460377

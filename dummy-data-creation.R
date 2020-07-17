@@ -2,6 +2,7 @@
 library(tidyverse)
 library(mc2d)
 
+# dummy data for app
 n_sample <- 50
 
 set.seed(2605)
@@ -12,4 +13,11 @@ dummy_data <- tibble(kpi1 = rnorm(n_sample, mean = 4, sd = 0.5),
 
 write_rds(dummy_data, "dummy-data.rds")
 
-write_rds(list(kpi1 = 4, kpi2 = 7, kpi3 = 5, kpi4 = 3.5), "dummy-user-data.rds")
+# dummy data to show SAC
+dummy_data_example <- tibble(farm_id = paste0("farm_", rep(1:10)),
+                             type_id = c(rep("lfa_upland_suckler_wean", 3), 
+                                         rep("rear_finish", 3),
+                                         rep("lfa_hill_ewe", 4)),
+                             kpi_id = rep("kpi1", 10),
+                             kpi_units = rep("kpi_unit", 10),
+                             kpi_value = rnorm(10, 10, 2))
