@@ -34,7 +34,9 @@ ui <- fluidPage(
       
       numericInput(inputId = "kpi4",
                    label =  "KPI 4",
-                   min = 1, max = 8, value = 3.5, step = 0.1)
+                   min = 1, max = 8, value = 3.5, step = 0.1),
+      
+      includeMarkdown("app-footer.Rmd")
       
     ),
     
@@ -42,9 +44,7 @@ ui <- fluidPage(
       
       plotOutput(outputId = "mainplot"),
       
-      tableOutput(outputId = "maintable"),
-      
-      includeMarkdown("app-footer.Rmd")
+      tableOutput(outputId = "maintable")
       
     )
     
