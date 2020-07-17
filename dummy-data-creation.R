@@ -21,3 +21,5 @@ dummy_data_example <- tibble(farm_id = paste0("farm_", rep(1:10)),
                              kpi_id = rep("kpi1", 10),
                              kpi_units = rep("kpi_unit", 10),
                              kpi_value = rnorm(10, 10, 2))
+
+write_csv(dummy_data_example, "example-data.csv")
