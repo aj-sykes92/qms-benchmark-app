@@ -8,7 +8,7 @@ ui <- fluidPage(
   # app theme and styling
   theme = shinythemes::shinytheme("lumen"),
   shinyWidgets::chooseSliderSkin("Nice"),
-  shinyWidgets::setSliderColor(rep("#8FBC8F", 4), 1:4),
+  #shinyWidgets::setSliderColor(rep("#8FBC8F", 4), 1:4),
   
   # app title
   titlePanel("QMS Benchmarking App (dummy version)"),
@@ -20,21 +20,21 @@ ui <- fluidPage(
     sidebarPanel(
       
       # kpi inputs
-      sliderInput(inputId = "kpi1",
-                  label =  "KPI 1",
-                  min = 1, max = 10, value = 4, step = 0.1),
+      numericInput(inputId = "kpi1",
+                   label =  "KPI 1",
+                   min = 1, max = 10, value = 4, step = 0.1),
       
-      sliderInput(inputId = "kpi2",
-                  label =  "KPI 2",
-                  min = 1, max = 40, value = 7, step = 0.5),
+      numericInput(inputId = "kpi2",
+                   label =  "KPI 2",
+                   min = 1, max = 40, value = 7, step = 0.5),
       
-      sliderInput(inputId = "kpi3",
-                  label =  "KPI 3",
-                  min = 1, max = 15, value = 5, step = 0.5),
+      numericInput(inputId = "kpi3",
+                   label =  "KPI 3",
+                   min = 1, max = 15, value = 5, step = 0.5),
       
-      sliderInput(inputId = "kpi4",
-                  label =  "KPI 4",
-                  min = 1, max = 8, value = 3.5, step = 0.1)
+      numericInput(inputId = "kpi4",
+                   label =  "KPI 4",
+                   min = 1, max = 8, value = 3.5, step = 0.1)
       
     ),
     
