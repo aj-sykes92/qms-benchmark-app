@@ -15,7 +15,7 @@ build_violin_plot <- function(user_benchmark, base_data) {
     geom_violin(data = base_data,
                 aes(x = kpi, y = value, fill = kpi)) +
     geom_point(data = user_benchmark,
-               aes(x = kpi, y = value), colour = "black", size = 3) +
+               aes(x = kpi, y = value), colour = "black", size = 5) +
     facet_wrap(~kpi, nrow = nrow, scales = "free") +
     labs(x = "",
          y = "",

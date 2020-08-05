@@ -21,8 +21,8 @@ ui <- fluidPage(
       
       # kpi inputs
       numericInput(inputId = "kpi1",
-                   label =  "KPI 1",
-                   min = 1, max = 10, value = 4, step = 0.1),
+                   label =  "Calves reared per 100 cows",
+                   min = 50, max = 110, value = 87, step = 1),
       
       numericInput(inputId = "kpi2",
                    label =  "KPI 2",
@@ -58,7 +58,7 @@ server <- function(input, output) {
   
   # main plot
   output$mainplot <- renderPlot({
-    build_violin_plot(list(kpi1 = input$kpi1,
+    build_violin_plot(list(`Calves reared per 100 cows` = input$kpi1,
                            kpi2 = input$kpi2,
                            kpi3 = input$kpi3,
                            kpi4 = input$kpi4),
@@ -67,7 +67,7 @@ server <- function(input, output) {
   
   # main table
   output$maintable <- renderTable({
-    build_stats(list(kpi1 = input$kpi1,
+    build_stats(list(`Calves reared per 100 cows` = input$kpi1,
                      kpi2 = input$kpi2,
                      kpi3 = input$kpi3,
                      kpi4 = input$kpi4),
