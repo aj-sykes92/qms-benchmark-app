@@ -5,7 +5,7 @@ output: html_document
 
 &nbsp;
 <hr />
-<p style="text-align: center;">App and analysis by <a href="https://www.sruc.ac.uk/asykes">Alasdair Sykes</a></p>
+<p style="text-align: center;">App and analysis by <a href="https://www.alasdairsykes.me">Alasdair Sykes</a></p>
 <p style="text-align: center;"> <a href="https://github.com/aj-sykes92/qms-benchmark-app">Source code here</a></p>
 <p style="text-align: center;"><span style="color: #808080;"><em>alasdair.sykes@sruc.ac.uk</em></span></p>
 
